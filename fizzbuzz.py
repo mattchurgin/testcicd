@@ -1,3 +1,10 @@
+import scipy
+import pandas
+import numpy
+
+import matplotlib
+from matplotlib import pyplot as plt
+
 def fizzbuzz(x):
 	if x%15==0:
 		return 'fizzbuzz'
@@ -6,7 +13,7 @@ def fizzbuzz(x):
 	elif x%3==0:
 		return 'buzz'
 	else:
-		return
+		return str(x)
 	
 
 if __name__ == '__main__':
