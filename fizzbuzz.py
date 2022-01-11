@@ -10,9 +10,9 @@ def fizzbuzz(input_integer: int) -> str:
     if input_integer % 15 == 0:
         return "fizzbuzz"
     if input_integer % 5 == 0:
-        return "fizz"
-    if input_integer % 3 == 0:
         return "buzz"
+    if input_integer % 3 == 0:
+        return "fizz"
     return str(input_integer)
 
 
