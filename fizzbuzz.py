@@ -1,21 +1,21 @@
-import scipy
-import pandas
-import numpy
+"""Testing fizzbuzz for ci/cd"""
 
-import matplotlib
-from matplotlib import pyplot as plt
 
-def fizzbuzz(x):
-	if x%15==0:
-		return 'fizzbuzz'
-	elif x%5==0:
-		return 'fizz'
-	elif x%3==0:
-		return 'buzz'
-	else:
-		return str(x)
-	
+def fizzbuzz(input_integer: int) -> str:
+    """
+    Takes an integer and input and outputs fizz if divisible by 5,
+    buzz if divisble by 3, fizzbuzz if divisible by both, or the
+    integer if else
+    """
+    if input_integer % 15 == 0:
+        return "fizzbuzz"
+    if input_integer % 5 == 0:
+        return "fizz"
+    if input_integer % 3 == 0:
+        return "buzz"
+    return str(input_integer)
 
-if __name__ == '__main__':
-	for i in range(100):
-		print(str(i), ': ', fizzbuzz(i))
+
+if __name__ == "__main__":
+    for i in range(100):
+        print(str(i), ": ", fizzbuzz(i))
